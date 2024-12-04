@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "roboto", sans-serif;
+  touch-action: none; /* Prevent pinch-to-zoom on touch devices */
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  border-radius: 2vw;
+  font-size: 1.3vw;
+  background-color: black;
+  color: white;
+  padding: 0.7vw 3.7vw;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+a:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-main {
+  height: 43vw;
+  width: 95vw;
+  border-radius: 2vw;
+  box-shadow: 0.1vw 0.4vw 0.4vw rgb(0, 0, 0, 0.2);
+  background-color: #faf9f6;
+}
+
+.hero-top .question {
+  height: 11vw;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  font-size: 1.3vw;
+}
+
+.hero-top .answer {
+  height: 29vw;
+}
+
+.hero-top .answer .mcqs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5vw;
+  padding: 1.5vw;
+}
+
+.hero-top .answer .ans-card {
+  height: 6vw;
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+  border-radius: 1vw;
+  font-size: 1.5vw;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding-right: 1.5vw;
+  box-shadow: 0.1vw 0.4vw 0.4vw rgb(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.ans-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0.1vw 0.4vw 0.4vw rgb(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.hero-top .answer .ans-card input {
+  height: 2vw;
+  width: 2vw;
+  margin: 0 1.3vw;
+  cursor: pointer;
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+  margin: 10vw 3vw 0 3vw;
+}
+
+.submit input,
+button {
+  border: none;
+  border-radius: 2vw;
+  font-size: 1.3vw;
+  background-color: black;
+  color: white;
+  height: 3vw;
+  width: 11vw;
+  box-shadow: 0.1vw 0.4vw 0.4vw rgb(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.submit .reset {
+  width: 3vw;
+  font-size: 1.5vw;
+  margin-left: 0.5vw;
+}
+
+.submit input:hover,
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0.1vw 0.4vw 0.4vw rgb(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.result .title {
+  /* background-color: aqua; */
+  height: 7vw;
+  width: 100%;
+  text-align: center;
+  line-height: 7vw;
+}
+
+.title h1 {
+  font-size: 2.7vw;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.result-main {
+  height: 25vw;
+  padding: 1.5vw 5.5vw;
+  display: flex;
+}
+
+.result-left {
+  background-color: rgb(233, 233, 233);
+  border-radius: 1vw;
+  height: 23vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35vw;
+  padding: 1vw 3vw;
+  box-shadow: 0.1vw 0.4vw 0.4vw rgb(0, 0, 0, 0.2);
+}
+
+.result-left h3 {
+  font-size: 1.9vw;
+  font-weight: 500;
+}
+
+.result-right {
+  height: 23vw;
+  width: 40vw;
+  margin-left: 10vw;
+  margin-top: 1.4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-btn {
+  height: 10vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 3vw 1.5vw 3vw;
+}
+
+.hide {
+  display: none;
+}
+
+.wrapper {
+  /* box-shadow: 0.47vw 0.47vw 0.78vw -0.07vw rgba(0, 0, 0, 0.15),
+    -0.47vw -0.47vw 0.78vw -0.07vw rgba(255, 255, 255, 0.7); */
+  width: 33.6vw; /* 50% larger than 22.4vw */
+  padding: 3.51vw 0; /* 50% larger than 2.34vw */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.54vw; /* 50% larger than 0.36vw */
+}
+
+.circular-bar {
+  width: 20.31vw; /* 50% larger than 13.54vw */
+  height: 20.31vw; /* 50% larger than 13.54vw */
+  background: conic-gradient(#4285f4 1.5deg, #e8f0f7 0deg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.47vw 0.47vw 0.78vw -0.07vw rgba(0, 0, 0, 0.15),
+    -0.47vw -0.47vw 0.78vw -0.07vw rgba(255, 255, 255, 0.7);
+  margin-bottom: 3.12vw; /* 50% larger than 2.08vw */
+}
+
+.circular-bar::before {
+  content: "";
+  position: absolute;
+  width: 17.19vw; /* 50% larger than 11.46vw */
+  height: 17.19vw; /* 50% larger than 11.46vw */
+  background: #faf9f6;
+  border-radius: 50%;
+  box-shadow: inset 0.47vw 0.47vw 0.78vw -0.07vw rgba(0, 0, 0, 0.15),
+    inset -0.47vw -0.47vw 0.78vw -0.07vw rgba(255, 255, 255, 0.7);
+}
+
+.percent {
+  z-index: 10;
+  font-size: 3.34vw; /* 50% larger than 1.56vw */
+}
+
+label {
+  font-size: 1.56vw; /* 50% larger than 1.04vw */
+}

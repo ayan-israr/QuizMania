@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>QuizMania</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="hero">
+            <div class="hero-main">
+                <div class="hero-top">
+                    <form name="mcqs" action="" onsubmit=fAns()>
+                        <div id="ques" class="as">
+                            <div class="question">
+                                <h2>Q.1. Which method allows user to analyze results or outcomes in different scenarios
+                                    with the same set of data?</h2>
+                            </div>
+                            <div class="answer">
+                                <div class="mcqs">
+                                    <div class="ans-card">
+                                        <input class="magnet" type="radio" name="answer" id="" value="1">What-if
+                                        Analysis
+                                    </div>
+                                    <div class="ans-card">
+                                        <input class="magnet" type="radio" name="answer" id="" value="2">Pivot Table
+                                    </div>
+                                    <div class="ans-card">
+                                        <input class="magnet" type="radio" name="answer" id="" value="3">Conditional
+                                        Formatting
+                                    </div>
+                                    <div class="ans-card">
+                                        <input class="magnet" type="radio" name="answer" id="" value="4">Sort and Filter
+                                    </div>
+                                </div>
+                                <div class="submit">
+                                    <div class="btn">
+                                        <button class=""><a href="../html/index.html">Home</a></button>
+                                        <!-- <button class="reset" title="reset"><i class="bx bx-reset"></i></button> -->
+                                    </div>
+                                    <input class="magnet" type="submit" value="Next">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="../js/quiz.js"></script>
+    <script src="../js/module1.js"></script>
+</body>
+
+</html>
